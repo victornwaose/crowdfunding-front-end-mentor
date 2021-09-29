@@ -17,8 +17,7 @@ h1,
 h2,
 h3,
 h4,
-h6,
-p {
+h6 {
     font-weight: 700;
     color: hsl(0, 0%, 0%);
 }
@@ -98,7 +97,7 @@ a{
     width: 46%;
     margin: 0 auto;
     position: absolute;
-    top: 27%;
+    top: 10%;
     left: 24%;
     background: white;
     border-radius: 5px;
@@ -243,4 +242,65 @@ a{
     height: 1rem;
     background-color: hsl(176, 50%, 47%);
     border-radius: 0.5rem;
+}
+#about {
+    width: 46%;
+    background: white;
+    border-radius: 5px;
+    margin-top: 46px;
+    padding-top: 2rem;
+    margin-left: 24%;
+   padding-bottom: 2rem;
+   padding-left: 4px;
+}
+#about h3 {
+    padding-left: 10px;
+    font-size: 2rem;
+}
+#about p{
+    padding-left: 10px;
+    color: hsl(0, 0%, 48%);
+}
+.option {
+    width: 90%;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 48%);
+    padding-top: 2rem;
+    margin-left: 5%;
+   padding-bottom: 2rem;
+   margin-bottom: 14px;
+}
+.optionTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    text-align: left;
+}
+.optionTitle h5 {
+    margin-right: 20px;
+}
+
+.stockRow{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.stockRow span {
+    margin-top: 9px;
+    color: hsl(0, 0%, 48%);
+}
+.stock {
+    display: flex;
+}
+.specific{
+    background: var(--mid-cyan);
+    padding: 4px;
+    border-radius: 14px;
+    width: 145px;
+    margin-left: -110px;
+    color: #ffffff;
+    border: none;
 }
