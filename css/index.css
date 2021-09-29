@@ -1,0 +1,246 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #ffffff;
+    --mid-cyan: hsl(176, 50%, 47%);
+    --black: hsl(0, 0%, 0%);
+  }
+body {
+    position: relative;
+    background-color: hsl(0, 0%, 94%);
+}
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    font-weight: 700;
+    color: hsl(0, 0%, 0%);
+}
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    transition: color 0.25s ease;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(176, 50%, 47%);
+    margin-bottom: 1.25rem;
+}
+
+h6 {
+    font-size: 2.25rem;
+    margin-right: 0.75rem;
+}
+
+p {
+    line-height: 2;
+}
+.hero {
+    background-image: url("../images//image-hero-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 18rem;
+}
+header {
+    width: 80%;
+    padding-top: 2rem ;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    
+}
+li{
+    margin-left: 20px;
+    list-style-type: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--white)
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+.container{
+    position: relative; 
+    padding-top: 36% ;
+    margin: 15%;
+}
+.container-stats {
+    width: 46%;
+    margin: 0 auto;
+    position: absolute;
+    top: 27%;
+    left: 24%;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+.container-stats img{
+    position: absolute;
+    top: -14% ;
+    left: 47% ;
+}
+.container-stats .title{
+ font-size: 1.4rem;
+ font-weight: bold;
+ text-align: center;
+ margin-top: 2.5rem;
+}
+.container-stats h4{
+    text-align: center;
+    padding-bottom: 10px;
+    color: hsl(0, 0%, 48%);
+}
+.button { 
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+.button_back {
+    background: var(--mid-cyan);
+    padding: 4px;
+    border-radius: 14px;
+    width: 145px;
+    margin-left: -110px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+}
+#bookmark {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+    background-color: hsl(0, 0%, 95%);
+}
+#bookmark svg {
+    position: relative;
+    width: 56px;
+    z-index: 1;
+}
+
+#bookmark circle {
+    transition: fill 0.25s ease;
+}
+
+#bookmark p {
+    font: 500 16px/1 'Commissioner', sans-serif;
+    color: hsl(0, 0%, 25%);
+    display: none;
+    width: 124px;
+    transition: color 0.25s ease;
+}
+
+#bookmark:hover {
+    cursor: pointer;
+}
+
+#bookmark:hover circle {
+    fill: hsl(0, 0%, 25%);
+}
+
+#bookmark:hover p {
+    color: hsl(0, 0%, 25%);
+}
+
+#bookmark.active circle {
+    fill: hsl(176, 50%, 47%);
+}
+
+#bookmark.active p {
+    color: hsl(176, 50%, 47%);
+}
+
+#bookmark.active:hover circle {
+    fill: hsl(176, 72%, 28%);
+}
+
+#bookmark.active:hover p {
+    color: hsl(176, 72%, 28%);
+}
+.stats{
+    width: 46%;
+    background: white;
+    border-radius: 5px;
+    margin-top: 206px;
+    padding-top: 2rem;
+    margin-left: 24%;
+   padding-bottom: 2rem;
+}
+.stats-item{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#stats h2,
+#stats p {
+    text-align: left;
+}
+.stat{
+    border: none;
+    border-right: 1px solid hsl(0, 0%, 90%);
+    padding: 0 1rem;
+    margin: 0 0.1rem;
+}
+.stat p{
+    color: hsl(0, 0%, 48%);
+}
+.stat:last-child {
+    border-right: none;
+    padding: 0 1rem;
+    text-align: left;
+}
+#progressBar {
+    position: relative;
+    display: block;
+    width: 91%;
+    height: 1rem;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 0.5rem;
+    margin-top: 1.7rem;
+    margin-left: 0.5rem;
+}
+
+#progressBar div {
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 1rem;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 0.5rem;
+}
